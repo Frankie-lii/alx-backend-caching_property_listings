@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-import os
 from pathlib import Path
+import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 SECRET_KEY = 'your-secret-key'
 DEBUG = True
 ALLOWED_HOSTS = []
@@ -40,5 +39,6 @@ CACHES = {
     }
 }
 
-# Other default settings remain unchanged
+STATIC_URL = 'static/'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
